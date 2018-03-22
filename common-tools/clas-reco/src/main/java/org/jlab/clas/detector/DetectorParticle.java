@@ -58,7 +58,9 @@ public class DetectorParticle implements Comparable {
     
     private DetectorTrack detectorTrack = null;
     private TaggerResponse taggerTrack = null;
-    
+   
+
+
     public DetectorParticle(){
         detectorTrack = new DetectorTrack(-1);
     }
@@ -166,6 +168,10 @@ public class DetectorParticle implements Comparable {
         return particle;
     }
     
+    public List<DetectorTrack.TrajectoryPoint> getTrackTrajectory() {
+        return detectorTrack.getTrajectory();
+    }
+
     
     public void clear(){
         this.responseStore.clear();
@@ -405,7 +411,7 @@ public class DetectorParticle implements Comparable {
     public double  getTaggerTime() {return this.taggerTrack.getTime();}
     public double  getTaggerEnergy() {return this.taggerTrack.getEnergy();}
 
-    
+ 
     public Path3D getTrajectory(){
         Path3D  path = new Path3D();
         //path.addPoint(this.particleCrossPosition.x(), 

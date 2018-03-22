@@ -20,9 +20,12 @@ public class EBTBEngine extends EBEngine {
         this.setCherenkovBank("REC::Cherenkov");
         this.setScintillatorBank("REC::Scintillator");
         this.setTrackBank("REC::Track");
+        this.setTrajectoryBank("REC::Traj");
         this.setCrossBank("REC::TrackCross");
-        this.setTrackType("TimeBasedTrkg::TBTracks");
         this.setFTBank("REC::ForwardTagger");
+        
+        this.setTrackType("TimeBasedTrkg::TBTracks");
+        this.setTrajectoryType("TimeBasedTrkg::Traj");
     }
     
 }
