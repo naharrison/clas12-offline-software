@@ -50,10 +50,10 @@ public class EBUtil {
 
         boolean isElectron=true;
 
-        if (nphe < EBConstants.HTCC_NPHE_CUT)
-            isElectron=false;
+        //if (nphe < EBConstants.HTCC_NPHE_CUT)
+        //    isElectron=false;
         
-        else if (abs(sfNSigma) > EBConstants.ECAL_SF_NSIGMA)
+        if (abs(sfNSigma) > EBConstants.ECAL_SF_NSIGMA)
             isElectron=false;
         
         else if (pcalEnergy < EBConstants.PCAL_ELEC_MINENERGY)

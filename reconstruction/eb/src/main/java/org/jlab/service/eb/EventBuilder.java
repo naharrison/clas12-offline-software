@@ -481,7 +481,7 @@ class ElectronTriggerOption extends TriggerOptions {
     @Override
     public void initID() {
         this.setID(11);
-        this.setScoreRequirement(1110);
+        this.setScoreRequirement(1100);
         this.setCharge(-1);
     }
 
@@ -492,7 +492,7 @@ class PositronTriggerOption extends TriggerOptions {
     @Override
     public void initID() {
         this.setID(-11);
-        this.setScoreRequirement(1110);
+        this.setScoreRequirement(1100);
         this.setCharge(1);
     }
 
