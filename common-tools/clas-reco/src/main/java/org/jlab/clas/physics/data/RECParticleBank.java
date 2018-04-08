@@ -25,7 +25,7 @@ public final class RECParticleBank {
     public final float chi2pid;
     public final short status;
 
-    RECParticleBank(DataBank dbank, int irow) {
+    public RECParticleBank(DataBank dbank, int irow) {
         pid = dbank.getInt("pid", irow);
         px = dbank.getFloat("px", irow);
         py = dbank.getFloat("py", irow);

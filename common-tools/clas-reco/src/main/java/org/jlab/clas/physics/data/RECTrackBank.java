@@ -29,7 +29,7 @@ public final class RECTrackBank {
     public final float chi2_nomm;
     public final short NDF_nomm;
 
-    RECTrackBank(DataBank dbank, int irow) {
+    public RECTrackBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         pindex = dbank.getShort("pindex", irow);
         detector = dbank.getByte("detector", irow);

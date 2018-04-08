@@ -29,7 +29,7 @@ public final class RECForwardTaggerBank {
     public final short size;
     public final short status;
 
-    RECForwardTaggerBank(DataBank dbank, int irow) {
+    public RECForwardTaggerBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         pindex = dbank.getShort("pindex", irow);
         detector = dbank.getByte("detector", irow);

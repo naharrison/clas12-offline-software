@@ -24,7 +24,7 @@ public final class RECTrajBank {
     public final float pz;
     public final float pathlength;
 
-    RECTrajBank(DataBank dbank, int irow) {
+    public RECTrajBank(DataBank dbank, int irow) {
         detId = dbank.getShort("detId", irow);
         trkId = dbank.getShort("trkId", irow);
         q = dbank.getByte("q", irow);

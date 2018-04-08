@@ -29,7 +29,7 @@ public final class RECHBForwardTaggerBank {
     public final short size;
     public final short status;
 
-    RECHBForwardTaggerBank(DataBank dbank, int irow) {
+    public RECHBForwardTaggerBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         pindex = dbank.getShort("pindex", irow);
         detector = dbank.getByte("detector", irow);

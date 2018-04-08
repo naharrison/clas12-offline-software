@@ -39,7 +39,7 @@ public final class RECCalorimeterBank {
     public final float m2w;
     public final short status;
 
-    RECCalorimeterBank(DataBank dbank, int irow) {
+    public RECCalorimeterBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         pindex = dbank.getShort("pindex", irow);
         detector = dbank.getByte("detector", irow);

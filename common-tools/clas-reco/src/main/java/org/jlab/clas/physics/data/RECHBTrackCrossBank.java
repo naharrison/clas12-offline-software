@@ -26,7 +26,7 @@ public final class RECHBTrackCrossBank {
     public final float c_uz;
     public final short status;
 
-    RECHBTrackCrossBank(DataBank dbank, int irow) {
+    public RECHBTrackCrossBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         pindex = dbank.getShort("pindex", irow);
         detector = dbank.getByte("detector", irow);

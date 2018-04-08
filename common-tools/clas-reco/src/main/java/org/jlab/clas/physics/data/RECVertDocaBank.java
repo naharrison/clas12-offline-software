@@ -32,7 +32,7 @@ public final class RECVertDocaBank {
     public final float cz2;
     public final float r;
 
-    RECVertDocaBank(DataBank dbank, int irow) {
+    public RECVertDocaBank(DataBank dbank, int irow) {
         index1 = dbank.getShort("index1", irow);
         index2 = dbank.getShort("index2", irow);
         x = dbank.getFloat("x", irow);

@@ -30,7 +30,7 @@ public final class RECTBCovMatBank {
     public final float C45;
     public final float C55;
 
-    RECTBCovMatBank(DataBank dbank, int irow) {
+    public RECTBCovMatBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         C11 = dbank.getFloat("C11", irow);
         C12 = dbank.getFloat("C12", irow);

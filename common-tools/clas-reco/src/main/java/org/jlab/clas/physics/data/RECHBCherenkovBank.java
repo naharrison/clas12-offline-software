@@ -30,7 +30,7 @@ public final class RECHBCherenkovBank {
     public final float dphi;
     public final short status;
 
-    RECHBCherenkovBank(DataBank dbank, int irow) {
+    public RECHBCherenkovBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         pindex = dbank.getShort("pindex", irow);
         detector = dbank.getByte("detector", irow);

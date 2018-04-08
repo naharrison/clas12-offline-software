@@ -31,7 +31,7 @@ public final class RECHBScintillatorBank {
     public final float hz;
     public final short status;
 
-    RECHBScintillatorBank(DataBank dbank, int irow) {
+    public RECHBScintillatorBank(DataBank dbank, int irow) {
         index = dbank.getShort("index", irow);
         pindex = dbank.getShort("pindex", irow);
         detector = dbank.getByte("detector", irow);

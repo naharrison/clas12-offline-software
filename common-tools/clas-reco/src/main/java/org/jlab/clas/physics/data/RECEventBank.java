@@ -27,7 +27,7 @@ public final class RECEventBank {
     public final byte Helic;
     public final float PTIME;
 
-    RECEventBank(DataBank dbank, int irow) {
+    public RECEventBank(DataBank dbank, int irow) {
         NRUN = dbank.getInt("NRUN", irow);
         NEVENT = dbank.getInt("NEVENT", irow);
         EVNTime = dbank.getFloat("EVNTime", irow);
