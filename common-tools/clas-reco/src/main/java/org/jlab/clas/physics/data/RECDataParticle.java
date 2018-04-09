@@ -3,6 +3,7 @@ package org.jlab.clas.physics.data;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
+import org.jlab.clas.physics.Particle;
 import org.jlab.io.base.DataBank;
 import org.jlab.io.base.DataEvent;
 
@@ -15,6 +16,7 @@ import org.jlab.io.base.DataEvent;
  */
 public final class RECDataParticle {
 
+    public Particle particle;
     public final RECParticleBank recParticle;
     public final List<RECCalorimeterBank> recCalorimeters;
     public final List<RECCherenkovBank> recCherenkovs;
@@ -34,6 +36,10 @@ public final class RECDataParticle {
         this.recForwardTaggers = Collections.unmodifiableList(recForwardTaggers);
         this.recScintillators = Collections.unmodifiableList(recScintillators);
         this.recTracks = Collections.unmodifiableList(recTracks);
+
+        particle = new Particle(recParticle.pid,
+                recParticle.px, recParticle.py, recParticle.pz,
+                recParticle.vx, recParticle.vy, recParticle.vz);
     }
 
     public static List<RECDataParticle> getRECDataParticles(DataEvent dataEv) {
